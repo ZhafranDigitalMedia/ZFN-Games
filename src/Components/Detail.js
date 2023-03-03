@@ -7,6 +7,9 @@ import Header from "./Header";
 import { Dna } from "react-loader-spinner";
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
+import img1 from "../picture/game.jpg";
+import img2 from "../picture/detail.jpg";
+import img3 from "../picture/desa.jpeg";
 
 const Detail = () => {
   const { id } = useParams();
@@ -106,9 +109,32 @@ const Detail = () => {
                   {detailgames.minimum_system_requirements.storage}
                 </li>
               </div>
+              <div class="grid grid-cols-3 items-center gap-4">
+                <div class="mb-4">
+                  <img
+                    src={img1}
+                    class="h-auto max-w-full rounded-lg"
+                    alt=""
+                  />
+                </div>
+                <div class="mb-4">
+                  <img
+                    src={img2}
+                    class="h-auto max-w-full  rounded-lg"
+                    alt=""
+                  />
+                </div>
+                <div class="mb-4">
+                  <img
+                    src={img3}
+                    class="h-auto max-w-full  rounded-lg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <Footer/>
+          <Footer />
         </>
       )}
     </>

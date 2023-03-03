@@ -38,7 +38,7 @@ const Itemgamas = () => {
   return (
     <section id="games">
       <div className="bg-items flex items-center flex-col p-32">
-        <h2 className="text-white font-semibold text-4xl">Rendom Games</h2>
+        <h2 className="text-white font-semibold text-4xl">This Games</h2>
 
         <div className="m-10 p-5 w-full h-full rounded-md flex flex-wrap gap-8 justify-center items-center">
           {games?.slice(0, 48).map((game) => (
