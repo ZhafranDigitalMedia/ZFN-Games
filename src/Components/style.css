@@ -1,0 +1,143 @@
+/* Header */
+
+.header {
+  transition: 0.5s;
+  @apply flex py-10 px-40 items-center fixed w-full;
+}
+
+.header.sticky {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  @apply bg-white py-5 z-50;
+}
+
+.header.sticky .menu-list li a {
+  @apply text-black hover:text-yellow-600;
+}
+
+.header.sticky .site-logo {
+  @apply text-black border-black;
+}
+
+.logo {
+  @apply uppercase cursor-pointer;
+}
+
+.site-logo {
+  @apply py-1 px-5 text-black text-xl font-semibold;
+}
+
+.nav {
+  @apply ml-auto;
+}
+
+.menu-list {
+  @apply flex gap-8 text-white;
+}
+
+.menu-list li a {
+  transition: 0.2s;
+  @apply font-semibold hover:text-yellow-500;
+}
+
+/* Home */
+
+/* .home {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("../picture/game.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  @apply h-screen flex justify-center items-center flex-col;
+} */
+
+/* About */
+
+
+.col-50 {
+  width: 50%;
+  @apply justify-center items-center text-center self-center;
+}
+
+.col-50 img {
+  @apply p-10;
+}
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.underline:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 0;
+  bottom: -5px;
+  background: #ffa33e;
+  height: 4px;
+  transition-property: width;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.underline:hover:after,
+.underline:focus:after,
+.underline:active:after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: a;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+.desa{
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+  url("../picture/game.jpg");
+background-attachment: fixed;
+background-position: center center;
+background-size: cover;
+@apply h-screen flex justify-center items-center flex-col;
+}
+
+.bg-items {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("../picture/game.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.menu-card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.bg-ku {
+  background-color: #caced1;
+}
+
+.bg-ku2 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bg-detail {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("../picture/detail.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}

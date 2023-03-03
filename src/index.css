@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  /* font-family: 'Pinyon Script', cursive; */
+  /* font-family: 'Great Vibes', cursive; */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.title {
+  font-family: "Pinyon Script", cursive;
+  color: #ffa33e;
+  @apply text-7xl relative;
+}
+
+.subtitle {
+  @apply uppercase font-semibold text-6xl tracking-wide;
+}
+
+.minititle {
+  @apply text-white text-lg py-2;
+}
